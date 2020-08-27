@@ -1,0 +1,29 @@
+.song-setting-menu{
+    background-color: rgb(255, 255, 255,0.8);
+
+}
+.song-setting-menu-list-item{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+ 
+    height: 25px;
+    width:90px;
+    text-indent: 10px;
+    padding-left: 20px;
+
+
+}
+
+.icon{
+    /* background-color: white;
+    border: 1px solid black; */
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius:20%;
+    position: absolute;
+    padding:0px 3px;
+    left: 4px;
+    width: 15px;
+}

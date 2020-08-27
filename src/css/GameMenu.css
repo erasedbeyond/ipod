@@ -1,0 +1,9 @@
+.game-menu{
+   background-color: rgb(255, 255, 255,.5); 
+   min-width: 190px;
+}
+.game-menu img{
+    width: 150px;
+    height: 150px;
+}
+

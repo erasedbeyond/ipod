@@ -1,0 +1,16 @@
+.theme-menu{
+    background-color: rgb(255, 255, 255,0.8);
+  
+}
+.theme-menu-list-item{
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    margin: 20px 20px 20px 15px;
+    padding-left: 5px;
+
+    text-align: start; 
+    height: 80px;
+    width:50px;
+    text-indent: 10px;
+}

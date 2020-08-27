@@ -1,0 +1,20 @@
+.artists-menu,
+.albums-menu{
+    background-color: rgb(255, 255, 255,0.8);
+
+}
+.artists-menu-list-item,
+.albums-menu-list-item {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width:190px;
+    text-indent: 10px;
+
+}
+#icon{
+    margin: 0 8px 0 4px;
+    width: 12px;
+}
