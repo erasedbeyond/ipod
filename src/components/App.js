@@ -1,5 +1,6 @@
 import React from 'react';
 import IPod from './IPod'
+import '../css/App.css'
 
 
 function App() {

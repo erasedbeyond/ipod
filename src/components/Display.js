@@ -64,11 +64,11 @@ class Display extends React.Component{
         return (
             <div className="display" style={styles.mainmenu}>
 
-                <NotificationBar style={styles.notificationBar} index={this.props.index} isPlaying={this.props.isPlaying}/>
+                <NotificationBar style={styles.notificationBar} volume={this.props.volume} index={this.props.index} videoIndex={this.props.videoIndex} isVideoPlaying={this.props.isVideoPlaying} isPlaying={this.props.isPlaying}/>
 
                 <div id="display">
                     <div id="left-display-container">
-                        {!menu.localeCompare('lock-menu')  && <LockMenu />} 
+                        {!menu.localeCompare('lock-menu')  && <LockMenu isPlaying={this.props.isPlaying} />} 
                         {!menu.localeCompare('now-playing-menu' )&&  <NowPlaying progressBarColor={this.props.progressBarColor} backgroundColor={this.props.notificationBarColor} index={this.props.index} audio={this.props.audio}/>}   
                         {!menu.localeCompare('main-menu')  && <MainMenu fontSize={this.props.fontSize} filter={this.props.filter} />} 
                         {!menu.localeCompare('song-menu') && <SongMenu fontSize={this.props.fontSize} filter={this.props.filter} />}  

@@ -41,7 +41,7 @@ class IPod extends React.Component {
 
             //video index
             videoIndex:0,
-            isVideoPlaying:true,
+            isVideoPlaying:false,
 
             //for album or artist
             artistOrAlbum:"",
@@ -69,8 +69,10 @@ class IPod extends React.Component {
             fontSize:"0.7rem",
 
             //volume
+            volume:1.0,
             audioVolume:1.0,
-            videoVolume:1.0
+            videoVolume:1.0,
+
 
 
            
@@ -86,7 +88,7 @@ class IPod extends React.Component {
 
         this.color=1;
         this.hue=192;
-        this.volume=0.01;
+        this.volume=0.005;
 
 
     }
@@ -96,7 +98,7 @@ class IPod extends React.Component {
         console.log(SongsData[this.state.audioIndex].src, ' **url');
         setInterval (() => {
 
-            if(this.state.currentAudio.duration==this.state.currentAudio.currentTime){
+            if(this.state.currentAudio.duration===this.state.currentAudio.currentTime){
                 if(this.state.autoPlay){
 
                     //if repeat is off play the next song else play current song 
@@ -139,34 +141,35 @@ class IPod extends React.Component {
         //audio volume control on rotating
         if(this.state.activeMenu==="now-playing-menu"||this.state.activeMenu==="lock-menu"){
             if(e.detail.distanceFromLast>0){
-                if(this.state.audioVolume<=0.99){
+
+                if(this.state.audioVolume<=0.995){
                     this.state.currentAudio.volume=  this.state.audioVolume + this.volume;
-                    this.setState({volume:this.state.audioVolume + this.volume}) ;     
+                    this.setState({audioVolume:this.state.audioVolume + this.volume}) ;     
                 }
             }else if(e.detail.distanceFromLast<0){
-                if(this.state.audioVolume>=0.01){
-                    this.state.currentAudio.volume=  this.state.audioVolume - this.volume;
-                    this.setState({volume:this.state.audioVolume - this.volume}) ;  
-                }
-            }
+                if(this.state.audioVolume>=0.005){
 
-        }
+                    this.state.currentAudio.volume=  this.state.audioVolume - this.volume;
+                    this.setState({audioVolume:this.state.audioVolume - this.volume}) ;  
+                }
+            } this.setState({volume:this.state.audioVolume});
+
+        } 
+        
 
         //video volume control on rotating
         if(this.state.activeMenu==="video-playing-menu"){
             if(e.detail.distanceFromLast>0){
-                if(this.state.videoVolume<=0.99){
-                    var vid = document.getElementById("display-video");
-                    vid.volume=  this.state.videoVolume + this.volume;
-                    this.setState({volume:this.state.videoVolume + this.volume}) ;    
+                if(this.state.videoVolume<=0.995){
+                    document.getElementById("display-video").volume=  this.state.videoVolume + this.volume;
+                    this.setState({videoVolume:this.state.videoVolume + this.volume}) ;    
                 }
             }else if(e.detail.distanceFromLast<0){
-                if(this.state.videoVolume>=0.01){
-                    var vid = document.getElementById("display-video")
-                    vid.volume=  this.state.videoVolume - this.volume;
-                    this.setState({volume:this.state.videoVolume - this.volume}) ;  
+                if(this.state.videoVolume>=0.005){
+                    document.getElementById("display-video").volume=  this.state.videoVolume - this.volume;
+                    this.setState({videoVolume:this.state.videoVolume - this.volume}) ;  
                 }
-            }
+            }this.setState({volume:this.state.videoVolume});
 
         }
 
@@ -603,7 +606,7 @@ class IPod extends React.Component {
                 this.setState({isPlaying:false});
             }
 
-            
+            this.setState({isVideoPlaying:true})
             document.getElementById('display-video').play();
 
         }
@@ -649,6 +652,9 @@ class IPod extends React.Component {
         this.click.play(); //sound of click 
 
         const prevMenu=document.getElementsByClassName(this.state.activeMenu)[0].getAttribute('prevMenu');
+        if(this.state.activeMenu==="video-playing-menu"){
+            this.setState({isVideoPlaying:false})
+        }
         if(prevMenu.localeCompare('none')===0){
             // this.state.currentAudio.pause();
             // this.setState({isPlaying:false});
@@ -867,6 +873,7 @@ class IPod extends React.Component {
                     repeat={this.state.repeat}
                     suffle={this.state.suffle}
                     fontSize={this.state.fontSize}
+                    volume={this.state.volume}
 
 
                 />

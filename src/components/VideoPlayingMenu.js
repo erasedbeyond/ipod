@@ -14,12 +14,12 @@ class VideoPlayingMenu extends React.Component{
 
     let icon=<div></div>;
     if(!this.props.isVideoPlaying){
-        icon =  <div id="video-play-icon"><img src={Icon}/></div>
+        icon =  <div id="video-play-icon"><img src={Icon}/><div id="video-tittle"  style={styles}>{tittle}</div></div>
     }
 
         return(
             <div className="video-playing-menu" prevmenu="video-menu">
-                <div id="video-tittle"  style={styles}>{tittle}</div>
+                
                 {icon}
                 <video id="display-video" src={src} type="video/mp4"></video>
            

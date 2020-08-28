@@ -20,9 +20,21 @@
     align-items: center;
     
 }
-#lock-date{
 
+.dj{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
 }
+.locked-playing{
+       width: 60px; 
+}
+.locked-playing>div{
+    width: 90px;
+}
+
 #lock-time{
     font-size: 1.5rem;
 }
