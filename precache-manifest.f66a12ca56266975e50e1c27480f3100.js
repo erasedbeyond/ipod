@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3b78f4943b92ea9c300f494f607367d",
+    "revision": "fa0028da9122d8df44652f898e33f1ca",
     "url": "/ipod/index.html"
   },
   {
-    "revision": "b5ea8354ca8e70736402",
-    "url": "/ipod/static/css/main.c45c26db.chunk.css"
+    "revision": "b9f9481bffdfc65cbf2c",
+    "url": "/ipod/static/css/main.4edf4217.chunk.css"
   },
   {
-    "revision": "93a300eafe8fd5bcec8e",
-    "url": "/ipod/static/js/2.2855a659.chunk.js"
+    "revision": "c6f51b59f59beb5cdc08",
+    "url": "/ipod/static/js/2.2ef4abca.chunk.js"
   },
   {
     "revision": "3b6069e01f0db714f9e787b4dbe9775c",
-    "url": "/ipod/static/js/2.2855a659.chunk.js.LICENSE.txt"
+    "url": "/ipod/static/js/2.2ef4abca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5ea8354ca8e70736402",
-    "url": "/ipod/static/js/main.be77edd8.chunk.js"
+    "revision": "b9f9481bffdfc65cbf2c",
+    "url": "/ipod/static/js/main.4cc8a1c2.chunk.js"
   },
   {
     "revision": "e6acf8b982710a9850e8",
@@ -56,16 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ipod/static/media/colorIcon.93c6e8af.svg"
   },
   {
-    "revision": "93e229e715bdc227806bf1b532530e77",
-    "url": "/ipod/static/media/dice.93e229e7.png"
+    "revision": "5f4831239562a23f03b1af2c81d7d3d7",
+    "url": "/ipod/static/media/disc.5f483123.svg"
   },
   {
-    "revision": "e921a6c918ba945bb9ee99c13e9a02fc",
-    "url": "/ipod/static/media/dj2.e921a6c9.svg"
+    "revision": "f84e317e887df1c60c379610037385ed",
+    "url": "/ipod/static/media/five.f84e317e.svg"
   },
   {
     "revision": "48bbaf1a2133173b6f7c76889f1c9b9a",
     "url": "/ipod/static/media/fontIcon.48bbaf1a.svg"
+  },
+  {
+    "revision": "9daba1a68b88b23913fa395082f1ac8d",
+    "url": "/ipod/static/media/four.9daba1a6.svg"
   },
   {
     "revision": "fa045375d4a8ecdf047584bffb3ac74f",
@@ -112,12 +116,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ipod/static/media/off.b305c966.svg"
   },
   {
+    "revision": "0a5619323eb71a919c7d9b08649bedea",
+    "url": "/ipod/static/media/one.0a561932.svg"
+  },
+  {
     "revision": "bc4fb86abc2c8c3b7a9e1397549854ab",
     "url": "/ipod/static/media/onn.bc4fb86a.svg"
   },
   {
     "revision": "72ef6b3124e88333b806c651a5f6717b",
     "url": "/ipod/static/media/pauseIcon.72ef6b31.svg"
+  },
+  {
+    "revision": "60e95f201c39b049484bcbfba3a410a2",
+    "url": "/ipod/static/media/phonograph1.60e95f20.svg"
   },
   {
     "revision": "23702280789a59631be14a16f188261b",
@@ -146,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "40b8ac78c25a53336fd16c5dbeccfe50",
     "url": "/ipod/static/media/settingIcon.40b8ac78.svg"
+  },
+  {
+    "revision": "32b4901fee8a56ae834734c1ed466bf7",
+    "url": "/ipod/static/media/six.32b4901f.svg"
   },
   {
     "revision": "43371a6f3a151e9a89a33271d3345154",
@@ -256,6 +272,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ipod/static/media/themeIcon.8ad050dc.svg"
   },
   {
+    "revision": "39baa074d729deba29a0e861306b3415",
+    "url": "/ipod/static/media/three.39baa074.svg"
+  },
+  {
+    "revision": "4fb1b393efac3e9b642d796c9e19e7ca",
+    "url": "/ipod/static/media/two.4fb1b393.svg"
+  },
+  {
     "revision": "9ab77b0c890522d9d4a7fdf146b2c632",
     "url": "/ipod/static/media/unlock.9ab77b0c.mp3"
   },
@@ -312,11 +336,39 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ipod/static/media/wallpaper1.f54416c9.jpg"
   },
   {
-    "revision": "d845ab38fbdb5a89aa6d7241994738c8",
-    "url": "/ipod/static/media/wallpaper2.d845ab38.jpg"
+    "revision": "5ceb5a9acb78a5e42d25eb3f75f9cfd0",
+    "url": "/ipod/static/media/wallpaper2.5ceb5a9a.jpg"
+  },
+  {
+    "revision": "89d27fe26803c1c982dd431d525a44ce",
+    "url": "/ipod/static/media/wallpaper3.89d27fe2.jpg"
+  },
+  {
+    "revision": "37af1d326f43ebb38fdb2219df4eebc8",
+    "url": "/ipod/static/media/wallpaper4.37af1d32.jpg"
+  },
+  {
+    "revision": "3f81308897f27ac698c8dc2d28aa42e7",
+    "url": "/ipod/static/media/wallpaper5.3f813088.jpg"
+  },
+  {
+    "revision": "fa62ef14cc744332e45d32554475766d",
+    "url": "/ipod/static/media/wallpaper6.fa62ef14.jpg"
+  },
+  {
+    "revision": "7cfb2263d520cabd3a15a44af615804c",
+    "url": "/ipod/static/media/wallpaper7.7cfb2263.jpg"
+  },
+  {
+    "revision": "e54889c15735db5c84e41c9efe3ef316",
+    "url": "/ipod/static/media/wallpaper8.e54889c1.jpg"
   },
   {
     "revision": "60df14fe70773f79ff078a24fa70a500",
     "url": "/ipod/static/media/wallpaperIcon.60df14fe.svg"
+  },
+  {
+    "revision": "398d5b2617ea9a71026ad854727b2900",
+    "url": "/ipod/static/media/zero.398d5b26.svg"
   }
 ]);
